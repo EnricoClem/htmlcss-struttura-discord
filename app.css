@@ -8,6 +8,8 @@ ul, ol, menu {
     list-style: none;
 }
 
+/* Elementi header */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -45,6 +47,20 @@ header {
 
 .right {
     justify-content: flex-end;
+}
+
+/* Elementi main */
+
+.section-blue {
+    background-color: rgb(39, 39, 92);
+    padding: 40px;
+}
+
+.container-small {
+    background-color: lightseagreen;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 400px;
 }
 
 /* DEBUG */
