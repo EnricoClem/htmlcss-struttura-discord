@@ -59,11 +59,26 @@ main .container {
     background-color: lightgray;
 }
 
+footer {
+    background-color: darkslategray;
+}
+
+.footer-first {
+    border-bottom: 2px solid gray;
+}
+
 /* Rows and colums */
 
-.row {
+.row {    
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.row .footer {
+    height: 40px;
 }
 
 .col-20 {
@@ -85,8 +100,22 @@ main .container {
     justify-content: center;
 }
 
+.col-33 {
+    width: 33.33%;
+    background-color: salmon;
+}
+
+.col-16 {
+    width: 16.665%;
+    background-color: mediumseagreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 main .col-60 {
     background-color: teal;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .left {
