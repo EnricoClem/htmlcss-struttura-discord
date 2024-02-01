@@ -55,6 +55,11 @@ main section {
     padding: 40px;
 }
 
+main .container {
+    height: 500px;
+    display: flex;
+}
+
 .section-blue {
     background-color: rgb(39, 39, 92);
 }
@@ -66,9 +71,20 @@ main section {
     height: 400px;
 }
 
+main .col-60 {
+    background-color: teal;
+}
+
+.col-40 {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightpink;
+}
+
 /* DEBUG */
 
-.col-20, .col-60 {
+.col-20, .col-40, .col-60 {
     padding: 5px;
     border: 1px solid black;
 }
