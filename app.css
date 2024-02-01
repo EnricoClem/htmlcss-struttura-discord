@@ -15,6 +15,10 @@ ul, ol, menu {
     margin: 0 auto;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 header {
     background-color: bisque;
     padding: 20px 0;
@@ -42,6 +46,10 @@ main .container {
 
 .section-blue {
     background-color: rgb(39, 39, 92);
+}
+
+.section-gray {
+    background-color: lightgray;
 }
 
 /* Rows and colums */
