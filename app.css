@@ -51,9 +51,12 @@ header {
 
 /* Elementi main */
 
+main section {
+    padding: 40px;
+}
+
 .section-blue {
     background-color: rgb(39, 39, 92);
-    padding: 40px;
 }
 
 .container-small {
