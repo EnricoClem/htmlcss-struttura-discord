@@ -35,6 +35,13 @@ header {
     height: 400px;
 }
 
+.container-big {
+    background-color: rgb(47, 122, 54);
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 800px;
+}
+
 main section {
     padding: 40px;
 }
