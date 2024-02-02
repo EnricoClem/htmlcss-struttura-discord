@@ -13,6 +13,7 @@ ul, ol, menu {
 .row {    
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
 }
 
 .container {
@@ -22,6 +23,14 @@ ul, ol, menu {
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
 }
 
 /* Specifiche header */
@@ -42,14 +51,11 @@ nav ul {
 /* Specifiche main */
 
 .container-small {
-    background-color: lightseagreen;
     max-width: 1000px;
     margin: 0 auto;
-    height: 400px;
 }
 
 .container-big {
-    background-color: rgb(47, 122, 54);
     max-width: 1200px;
     margin: 0 auto;
     height: 800px;
@@ -64,87 +70,43 @@ main .container {
     display: flex;
 }
 
-.section-blue {
-    background-color: rgb(39, 39, 92);
-}
-
-.section-gray {
-    background-color: lightgray;
-}
-
-footer {
-    background-color: darkslategray;
-}
-
-.footer-first {
-    border-bottom: 2px solid gray;
-}
-
-/* Rows and colums */
+/* Specifiche footer */
 
 footer .row-footer-first {
     padding-top: 10px;
     padding-bottom: 40px;
     height: 500px;
+    border: 0;
 } 
 
 footer .row-footer-second {
     margin-top: 40px;
     height: 80px;
-    background-color: aquamarine;
     justify-content: space-between;
     align-items: center;
 } 
 
+/* Impostazioni colonne */
+
 .col-20 {
     width: 20%;
-    display: flex;
 }
 
 .col-40 {
     width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: lightpink;
 }
 
 .col-60 {
     width: 60%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .col-33 {
-    width: 33.33%;
-    background-color: salmon;
+    width: calc(100% / 3);
 }
 
 .col-16 {
-    width: 16.665%;
-    background-color: mediumseagreen;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main .col-60 {
-    background-color: teal;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.left {
-    justify-content: flex-start;
-}
-
-.right {
-    justify-content: flex-end;
-}
-
-.button-footer {
-    background-color: darkviolet;
-    padding: 5px;
-    border: 1px solid black;
+    width: calc(100% / 6);
 }
 
 /* DEBUG */
@@ -168,5 +130,56 @@ main .col-60 {
 }
 
 .debug .header nav, div, ul, a {
+    border: 1px solid black;
+}
+
+.debug .section-blue {
+    background-color: rgb(39, 39, 92);
+}
+
+.debug .container-small {
+    background-color: lightseagreen;
+    min-height: 400px;
+}
+
+.debug .container-big {
+    background-color: rgb(47, 122, 54);
+}
+
+.debug .section-gray {
+    background-color: lightgray;
+}
+
+.debug footer {
+    background-color: darkslategray;
+}
+
+.debug .footer-first {
+    border-bottom: 2px solid gray;
+}
+
+.debug footer .row-footer-second {
+    background-color: aquamarine;
+}
+
+.debug .col-40 {
+    background-color: lightpink;
+}
+
+.debug .col-33 {
+    background-color: salmon;
+}
+
+.debug .col-16 {
+    background-color: mediumseagreen;
+}
+
+.debug main .col-60 {
+    background-color: teal;
+}
+
+.debug .button-footer {
+    background-color: darkviolet;
+    padding: 5px;
     border: 1px solid black;
 }
