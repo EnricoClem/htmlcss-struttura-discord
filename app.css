@@ -53,6 +53,7 @@ nav ul {
 .container-small {
     max-width: 1000px;
     margin: 0 auto;
+    min-height: 400px;
 }
 
 .container-big {
@@ -109,9 +110,16 @@ footer .row-footer-second {
     width: calc(100% / 6);
 }
 
+
+
+
 /* DEBUG */
 
-.debug .col-20, .col-40, .col-60, .col-16, .col-33 {
+.debug .col-20,
+.debug .col-40,
+.debug .col-60,
+.debug .col-16,
+.debug .col-33 {
     padding: 5px;
     border: 1px solid black;
 }
@@ -129,7 +137,7 @@ footer .row-footer-second {
     background-color: burlywood;
 }
 
-.debug .header nav, div, ul, a {
+.debug nav {
     border: 1px solid black;
 }
 
@@ -139,7 +147,6 @@ footer .row-footer-second {
 
 .debug .container-small {
     background-color: lightseagreen;
-    min-height: 400px;
 }
 
 .debug .container-big {
