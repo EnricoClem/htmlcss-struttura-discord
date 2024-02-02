@@ -8,7 +8,12 @@ ul, ol, menu {
     list-style: none;
 }
 
-/* Conteiners various option */
+/* LAYOUT */
+
+.row {    
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .container {
     max-width: 1200px;
@@ -19,14 +24,22 @@ ul, ol, menu {
     flex-direction: row-reverse;
 }
 
-header {
-    background-color: bisque;
-    padding: 20px 0;
+/* Specifiche header */
+
+nav {
+    justify-content: space-between;
 }
 
-.menu {
-    background-color: burlywood;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.container nav {
+    padding: 10px;
+}
+
+/* Specifiche main */
 
 .container-small {
     background-color: lightseagreen;
@@ -68,11 +81,6 @@ footer {
 }
 
 /* Rows and colums */
-
-.row {    
-    display: flex;
-    flex-wrap: wrap;
-}
 
 footer .row-footer-first {
     padding-top: 10px;
@@ -141,11 +149,24 @@ main .col-60 {
 
 /* DEBUG */
 
-.col-20, .col-40, .col-60, .col-16, .col-33 {
+.debug .col-20, .col-40, .col-60, .col-16, .col-33 {
     padding: 5px;
     border: 1px solid black;
 }
 
-li {
-    padding: 0 5px;
+.debug li {
+    display: contents;
+}
+
+.debug header {
+    background-color: bisque;
+    padding: 20px 0;
+}
+
+.debug .nav {
+    background-color: burlywood;
+}
+
+.debug .header nav, div, ul, a {
+    border: 1px solid black;
 }
